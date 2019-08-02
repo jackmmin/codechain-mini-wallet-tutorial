@@ -1,0 +1,15 @@
+{
+  "name": "codechain-mini-wallet-tutorial",
+  "version": "1.0.0",
+  "description": "my first mini wallet",
+  "main": "index.ts",
+  "author": "Jongmin Ahn",
+  "license": "MIT",
+  "repository": "https://github.com/jackmmin/codechain-mini-wallet-tutorial.git",
+  "dependencies": {
+    "codechain-primitives": "^1.0.2",
+    "codechain-sdk": "^1.2.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
