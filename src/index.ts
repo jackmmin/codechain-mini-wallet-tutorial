@@ -4,6 +4,8 @@ import { Tracer } from "./tracer";
 import { SDK } from "codechain-sdk";
 import init from "./commands/init";
 import account from "./commands/account";
+import sendCCC from "./commands/sendCCC";
+import watch from "./commands/watch";
 
 async function asyncMain() {
 
@@ -27,6 +29,8 @@ async function asyncMain() {
         case "hello": await hello( sdk, tracer, args ); break;
         case "init": await init( sdk, tracer, args ); break;
         case "account": await account( sdk, tracer, args ); break;
+        case "sendCCC": await sendCCC( sdk, tracer, args ); break;
+        case "watch": await watch( sdk, tracer, args ); break;
         default:
             throw new Error( `Invalid command ${ command }` );
     }
